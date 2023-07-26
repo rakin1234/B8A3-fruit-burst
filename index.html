@@ -6,17 +6,18 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <!-- <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color-primay': '#F85559',
               }
             }
           }
         }
-      </script>
+      </script> -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -27,7 +28,8 @@
       </style>
 </head>
 <body class="font-lato">
-    <header class="sm:mx-5 sm:my-11 md:mx-5 md:my-11 lg:m-32">
+    <!-- navbar and header -->
+    <header class="sm:mx-5 sm:my-11 md:mx-5 md:my-11 lg:mx-32 lg:mt-12">
         <div class="navbar lg:bg-[#F85559] lg:rounded-full lg:px-12 lg:py-8">
             <div class="navbar-start">
                 <div class="sm:flex md:flex lg:hidden items-center font-bold text-black text-4xl">
@@ -82,5 +84,81 @@
             </div>
         </div>
     </header>
+
+    <!-- Slider -->
+    <section>
+        <div class="carousel sm:mx-5 sm:my-11 md:mx-5 md:my-11 lg:mx-32 lg:mt-4">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/banner1.png" class="w-full" />
+                <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❮</a>
+                    <div class="text-center space-y-7">
+                        <h1 class="text-white font-bold text-7xl">Exotic tastes at your<br>doorstep</h1>
+                        <p class="text-white font-normal text-xl">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-[#F85559] border-0 text-white normal-case text-xl">Shop Now</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❯</a>
+                </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❮</a> 
+                    <div class="text-center space-y-7">
+                        <h1 class="text-white font-bold text-7xl">Exotic tastes at your<br>doorstep</h1>
+                        <p class="text-white font-normal text-xl">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-[#F85559] border-0 text-white normal-case text-xl">Shop Now</button>
+                    </div>
+                    <a href="#slide3" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❯</a>
+                </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❮</a>
+                    <div class="text-center space-y-7">
+                        <h1 class="text-white font-bold text-7xl">Exotic tastes at your<br>doorstep</h1>
+                        <p class="text-white font-normal text-xl">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-[#F85559] border-0 text-white normal-case text-xl">Shop Now</button>
+                    </div>
+                    <a href="#slide4" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❯</a>
+                </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❮</a>
+                    <div class="text-center space-y-7">
+                        <h1 class="text-white font-bold text-7xl">Exotic tastes at your<br>doorstep</h1>
+                        <p class="text-white font-normal text-xl">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-[#F85559] border-0 text-white normal-case text-xl">Shop Now</button>
+                    </div>
+                    <a href="#slide1" class="btn btn-circle border-0 bg-black text-white hover:bg-black">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden md:hidden lg:flex justify-between items-center p-10 w-1/2 absolute left-1/4 -mt-36 bg-white rounded-lg">
+            <figure>
+                <img class="h-28" src="images/fruit1.png" alt="">
+                <figcaption class="text-center font-normal text-xl">Grape</figcaption>
+            </figure>
+            <figure>
+                <img class="h-28" src="images/fruit2.png" alt="">
+                <figcaption class="text-center font-normal text-xl">Orange</figcaption>
+            </figure>
+            <figure>
+                <img class="h-28" src="images/fruit3.png" alt="">
+                <figcaption class="text-center font-normal text-xl">Apple</figcaption>
+            </figure>
+            <figure>
+                <img class="h-28" src="images/fruit4.png" alt="">
+                <figcaption class="text-center font-normal text-xl">Strawberry</figcaption>
+            </figure>
+            <figure>
+                <img class="h-28" src="images/fruit5.png" alt="">
+                <figcaption class="text-center font-normal text-xl">Pomegranate</figcaption>
+            </figure>
+        </div>
+    </section>
 </body>
 </html>
