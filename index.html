@@ -17,8 +17,70 @@
           }
         }
       </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+      <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+      </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="sm:mx-5 sm:my-11 md:mx-5 md:my-11 lg:m-32">
+        <div class="navbar lg:bg-[#F85559] lg:rounded-full lg:px-12 lg:py-8">
+            <div class="navbar-start">
+                <div class="sm:flex md:flex lg:hidden items-center font-bold text-black text-4xl">
+                    <img src="images/logo.png" alt="">
+                    <h1>Fruit Burst</h1>
+                </div>
+                <ul class="sm:hidden md:hidden lg:flex text-white font-normal text-lg">
+                    <li class="pr-4"><a>Home</a></li>
+                    <li class="pr-4"><a>About US</a></li>
+                    <li class="pr-4"><a>Shop</a></li>
+                    <li class="pr-4"><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <div class="sm:hidden md:hidden lg:flex items-center font-bold text-white text-4xl">
+                    <img src="images/logo.png" alt="">
+                    <h1>Fruit Burst</h1>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="bg-[#F85559] text-white font-normal text-lg menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow rounded-box w-[270px]">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li>
+                            <div class="flex items-center bg-white rounded-full pl-4">
+                                <input class="pl-4 font-normal" type="text" name="" id="" placeholder="Search here">
+                                <button class="btn btn-ghost btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sm: hidden md:hidden lg:flex items-center bg-white rounded-full pl-4">
+                    <input class="pl-4 font-normal" type="text" name="" id="" placeholder="Search here">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
